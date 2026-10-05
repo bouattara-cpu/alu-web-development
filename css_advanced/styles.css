@@ -3,12 +3,13 @@
    =================================================== */
 
 :root {
-  --purple: #8e6cef;
+  --purple: #8e6cef;        /* bouton / accents - à confirmer avec Inspect */
   --purple-dark: #6f4fd6;
+  --magenta-quote: #b24fe0; /* fond section Quote - à confirmer avec Inspect */
+  --navy: #0d1b2a;          /* fond Membership + Footer - à confirmer avec Inspect */
   --text-dark: #2d2d3a;
   --text-light: #ffffff;
   --bg-light: #ffffff;
-  --bg-section: #f7f7fb;
 }
 
 * {
@@ -135,7 +136,7 @@ body {
 /* ===================== QUOTE ===================== */
 
 .quote-section {
-  background-color: var(--purple-dark);
+  background-color: var(--magenta-quote);
   padding: 50px 20px;
 }
 
@@ -272,9 +273,15 @@ body {
 /* ===================== MEMBERSHIP ===================== */
 
 .membership-section {
-  background-color: var(--bg-section);
+  background-color: var(--navy);
   padding: 60px 20px;
   text-align: center;
+  color: var(--text-light);
+}
+
+.membership-item h2,
+.membership-item p {
+  color: var(--text-light);
 }
 
 .membership-section .section-title {
@@ -363,7 +370,7 @@ body {
 /* ===================== FOOTER ===================== */
 
 .site-footer {
-  background-color: var(--purple-dark);
+  background-color: var(--navy);
   padding: 30px 20px;
 }
 
